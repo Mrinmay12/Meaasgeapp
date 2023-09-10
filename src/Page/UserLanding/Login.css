@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .containerlogin {
+    max-width: 431px;
+    margin: 72px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .name{
+    width: 89%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    border-radius: 22px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    border-radius: 12px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #fullname {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  
+  .inputpassword {
+    /* background: url("../UploadPost/img/search.svg") no-repeat 100%; */
+    background-size: 20px;
+    width: 93%;
+    margin-bottom: 5px;
+    padding-right: 25px;
+    /* background-color: aliceblue; */
+    box-shadow: 0 0 4px rgba(0, green, blue, alpha);
+}
+
+
+
+  @media (max-width: 967px) {
+    .container {
+      max-width: 55%;
+      padding: 20px;
+    }
+    
+    .form-group input[type="submit"] {
+      width: 100%;
+    }
+}
+.signin{
+  color: aquamarine;
+  cursor: pointer;
+}
+.forgetpass{
+  color: red;
+  cursor: pointer;
+}

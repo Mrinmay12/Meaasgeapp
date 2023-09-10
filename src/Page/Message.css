@@ -1,0 +1,211 @@
+/* Customize the styling as needed */
+
+
+.commentcontainer {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Hide content that overflows the container */
+    display: flex;
+    /* Add display flex to the container */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row on smaller screens */
+  }
+  
+  /*   
+    h1 {
+      text-align: center;
+      width: 100%; 
+    } */
+  
+  .comments-container {
+    flex: 1;
+    /* Use flex: 1 to occupy the available space */
+    display: flex;
+    /* Add display flex to comments-container */
+  }
+  
+  .comments {
+    flex: 1;
+    /* max-width: 600px; */
+    /* max-height: 657px;  */
+    max-height: 469px;
+    overflow-y: auto;
+    /* Enable vertical scrolling when content overflows */
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .comment-content {
+    flex: 1;
+  }
+  
+  .comment h4 {
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+  
+  .comment-form {
+    flex-shrink: 0;
+    /* Prevent the form from shrinking when the container is resized */
+    max-width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    position: sticky;
+    /* Keep the form fixed */
+    top: 20px;
+    /* Space from the top of the container */
+    margin-left: auto;
+    /* Push the form to the right side */
+  }
+  
+  .comment-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Styles */
+  /* @media (max-width: 768px) {
+      .comments-container {
+        flex-direction: column;
+      }
+    
+      .comments {
+        max-width: none;
+        padding-right: 0;
+        margin-bottom: 0;
+        max-height:387px
+      }
+    
+      .comment-form {
+        max-width: none;
+        margin-top: 20px;
+      }
+    } */
+  @media (max-width: 740px) {
+    .comments {
+      max-width: none;
+      padding-right: 0;
+      margin-bottom: 0;
+      max-height: 462px
+    }
+  }
+  
+  @media (max-width: 660px) {
+    .comments {
+      max-width: none;
+      padding-right: 0;
+      margin-bottom: 0;
+      max-height: 385px
+    }
+  
+    .comment-main-box {
+      width: 60%;
+      max-width: 80%;
+      /* margin: auto; */
+      /* display: flex; */
+      padding-top: 47px
+    }
+  }
+  
+  /* Custom scrollbar styles for Webkit-based browsers */
+  .comments::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .comments::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+  
+  .comments::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .send-icon {
+    color: rgb(136, 255, 0);
+    font-size: 10px;
+    padding: 10px;
+    /* min-width: 40px; */
+    /* margin-top: 10px; */
+    position: absolute;
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  .comment-text {
+    padding: 1rem;
+    background-color: #ccc;
+    flex: 1;
+    word-wrap: break-word;
+    text-align: start
+  }
+  
+  .comments-box .profile-pic img {
+    border-radius: 50%;
+  }
+  
+  .profile-pic {
+    margin-right: 1rem;
+  }
+  
+  .comments-box {
+    flex: 1;
+  }
+  
+  .comment-main-box {
+    width: 60%;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 47px;
+  }
+  
+ 
+  
+  @media (max-width: 660px) {
+    .comment-main-box {
+      width: 60%;
+      max-width: 100%;
+      /* margin: auto; */
+   
+      padding-top: 47px;
+      margin-left: 0px;
+    }
+  
+    
+  }
+  
+  .autogrowstart {
+    position: fixed;
+    height: 78px;
+    width: 100%;
+    background-color: white;
+    bottom: -8px;
+  }

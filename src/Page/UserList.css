@@ -1,0 +1,133 @@
+.userrequest {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profileimg {
+    height: 94px;
+    width: 89px;
+    background-color: gray;
+    border-radius: 77px;
+}
+
+.reqbutton {
+    background-color: #007bff;
+    height: 65px;
+    width: 171px;
+    text-align: center;
+    border-radius: 19px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.buttontext {
+    color: white;
+    margin: 22px;
+    font-size: 20px;
+}
+
+.username {
+    margin-top: 31px;
+    padding: 9px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    /* height: 359px; */
+    background-color: white;
+    margin-top: 12px;
+}
+
+.main-card::after {
+    content: '';
+    display: block;
+    height: 20px;
+    /* Adjust this value to control the space */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .profileimg {
+        height: 65px;
+        width: 101px;
+        background-color: gray;
+        border-radius: 77px;
+        margin-top: 24px;
+    }
+
+    .reqbutton {
+        background-color: #007bff;
+        height: 64px;
+        width: 124px;
+        text-align: center;
+        border-radius: 19px;
+        margin-top: 29px;
+        cursor: pointer;
+    }
+
+    .username {
+        margin-top: 31px;
+        padding: 9px;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+
+
+
+/* Style for the user card */
+.user-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 360px;
+    /* margin: 0 auto; */
+}
+
+/* Style for the user image */
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style for user info (name and message) */
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.user-message {
+    margin: 0;
+}
+
+/* Style for the message button */
+.message-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Add some spacing */
+.message-button {
+    margin-left: 10px;
+}
