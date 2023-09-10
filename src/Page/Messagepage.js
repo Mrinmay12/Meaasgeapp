@@ -25,7 +25,7 @@ export default function Messagepage() {
     const [currentChat, setCurrentChat] = useState(null);
     useEffect(() => {
       if (userId) {
-        socket.current = io("localhost:9000");
+        socket.current = io("https://messageapp-c9mf.onrender.com");
         socket.current.emit("add-user", userId);
       }
     }, [userId]);
